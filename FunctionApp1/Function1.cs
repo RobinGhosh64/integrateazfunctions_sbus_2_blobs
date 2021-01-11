@@ -24,8 +24,7 @@ namespace FunctionApp1
 
 
                 //
-                string connectionString = "DefaultEndpointsProtocol=https;AccountName=rsgblobstorage;AccountKey=T0UfXP1YFCe58oqVD1MJmqH6RuXLDJDCn27TalTOdl/YT9KU4YRTPrWa7ZQsixB+laTi79Vo4W/uckRUO/TcIQ==;EndpointSuffix=core.windows.net";
-                //string connectionString = Environment.GetEnvironmentVariable("AZURE_STORAGE_CONNECTION_STRING");
+                string connectionString = Environment.GetEnvironmentVariable("AZURE_STORAGE_CONNECTION_STRING");
 
                 // Create a BlobServiceClient object which will be used to create a container client
                 BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
