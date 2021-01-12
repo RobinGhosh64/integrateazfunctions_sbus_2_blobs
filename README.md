@@ -1,7 +1,7 @@
 #
 This Azure Function is a Service Bus Trigger. It reads messages from Service Bus as soon as they arrive.
 I prefer to read in batches of 100. I also prefer my caller who is writing into the queue use sessionId attribute in their message, so they will maintain an order sequence.
-I am processing 500 messages per second by running this function locally inside my context of Visual Studio 2019. If my client is sendind more than 15K of data per message, then my processing speed will be lower.
+I am processing 500 messages per second by running this function locally inside my context of Visual Studio 2019. If my client is sending more than 15K of data per message, then my processing speed will be lower.
 
 #
 By default, the Function runtime receives a message in a PeekLock mode. It calls Complete on the message if the function finishes successfully (no exceptions), or calls Abandon if the function fails. By default autoComplete is set to true on the service bus settings. 
