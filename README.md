@@ -13,6 +13,6 @@ You will see this on line #51 of the Function1.cs as I wanted to take control an
 
 You are welcome to set autoComplete to true. In which case, please comment lines 18,51 and 53 in the Function1.cs
 
-To achieve more througput I have deployed this Az Function into an App Service Plan with 3 instances of PremiumV1 and I can consume at the rate of 1000 messages per second. Each instance of the Azure Function works on a separate set of messages, with no contention!
+To achieve more througput I have deployed this Az Function into an App Service Plan with 3 instances of PremiumV1 and I can consume at the rate of 1000 messages per second. Each instance of the Azure Function works on a separate set of messages, with no contention and hence can scale based on demand.
 
 Cheers!
